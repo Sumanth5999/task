@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <style media="screen">
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+    font-family:tahoma;
+}
+h1{
+    text-align: center;
+    position: fixed;
+    top:0;left:35%;
+    color: purple;
+}
+ul{
+    list-style: none;
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    top: 0; left: 0;
+    background: crimson;
+    box-shadow: 2px 0px 5px black;
+}
+ul li{
+    margin: 5px;
+    padding: 5px;
+    margin-top: 75px;
+}
+ul li a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+}
+ul li a:hover{
+    background: whitesmoke;
+    color: blue;
+
+}
+Home{
+    height: 100vh;
+    width: 100wh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+#Home{
+    background: linear-gradient(-45deg,white 30%,yellow 0%);
+}
+#About{
+    background: linear-gradient(-45deg,white 30%,green 0%);
+}
+#Blog{
+    background: linear-gradient(-45deg,white 30%,red 0%);
+}
+#Services{
+    background: linear-gradient(-45deg,white 30%,pink 0%);
+}
+#Contacts{
+    background: linear-gradient(-45deg,white 30%,blue 0%);
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>WELCOME TO RONENTECHNOLOGIES</h1>
+
+    <ul>
+        <li><a href="Home">Home</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Blog">Blog</a></li>
+        <li><a href="Services">Servics</a></li>
+        <li><a href="Contacts">Contact</a></li>
+    </ul>
+
+<div class="content">
+    <section id="Home">
+        <h3>Home</h3>
+    </section>
+    <section id="About">
+        <h3>About</h3>
+    </section>
+    <section id="Blog">
+        <h3>Blog</h3>
+    </section>
+    <section id="services">
+        <h3>Services</h3>
+    </section>
+    <section id="Contact">
+        <h3>Contact</h3>
+    </section>
+</div>  
+</body>
+</html>

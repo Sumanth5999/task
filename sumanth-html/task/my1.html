@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <html>
+<head>
+<script type="text/javascript">
+function checkButton(){
+if(document.form1.button1.checked == true){
+alert("Box1 is checked");
+} else if(document.form1.button2.checked == true){
+alert("Box 2 is checked");
+}
+}
+</script>
+</head>
+<body>
+<form name="form1">
+<input type="chechbox" name=button1>Box 1
+<br> <input type="chechbox" name=button2 CHECKED>Box 2
+<br> <INPUT type="button" value="Get Checked" onClick='checkButton()'>
+</form>
+</body>
+</html>
+</body>
+</html>
+
+var firstpassword=document.f1.password.value;  
+var secondpassword=document.f1.password2.value;  
+  
+if(firstpassword==secondpassword){  
+return true;  
+}  
+else{  
+alert("password must be same!");  
+return false;  
+}  
+
+if (name==null || name==""){  
+    alert("Name can't be blank");  
+    return false;  
+  }else if(password.length<6){  
+    alert("Password must be at least 6 characters long.");  
+    return false;  
+    }  
+
+    <script type="text/javascript">
+        function validation()
+        {
+        var a = document.form.address.value;
+        if(a=="")
+        {
+        alert("Please Enter Your Details Here");
+        document.form.address.focus();
+        return false;
+        }
+        }
+        </script>

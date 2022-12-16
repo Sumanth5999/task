@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psuedo-elements</title>
+    <style>
+        h2::first-letter{
+            text-transform: uppercase;
+            color: chartreuse;
+        }
+        p::first-line{
+            font-style: italic;
+            color: deeppink;
+        }
+        h2::before{
+            content: "sumanth";
+        }
+        h2::after{
+            content: " BELIEVE ME";
+        }
+        p::selection{
+            background: brown;
+            color: chartreuse;
+        }
+        
+            
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2> is a goodboy</h2>
+        <h2> is a cse student</h2>
+        <h2> is a software developer</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+             quasi at ad vero, quas hic, libero dignissimos ut cupiditate error saepe amet.
+              Mollitia animi quae similique optio tempora libero repellat fuga quo eligendi!
+               voluptate provident, quibusdam fugit molestias!
+            </p>
+    </div>
+    
+</body>
+</html>

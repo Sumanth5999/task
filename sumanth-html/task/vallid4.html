@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sumanth</title>
+</head>
+<body>
+    <center>
+        <form  name="myForm" method="#" action="why.html" onsubmit = "return validate()">
+            <table cellspacing = "1" >
+               
+               <tr>
+                <td>password</td>
+                <td><input type = "password" name = "password1" id="password1" /></td>
+               </tr>
+
+               <tr>
+                 <td>confirm password</td>
+                 <td><input type = "password" name = "cnfpassword2"  id="cnfpassword2" /></td>
+                </tr>
+
+                <tr>
+                    <td><input type="submit" value="register"/>  </td>
+                   </tr>
+                   
+    </center>
+    <script type="text/javascript" >
+       
+        function validate(){
+var password=document.myForm.password1.value;
+var conformpassword=document.myForm.cnfpassword2.value;
+
+
+if(password != conformpassword){
+alert("confirm password not matched to password");
+return false;
+}
+}
+    </script>
+
+</body>
+</html>

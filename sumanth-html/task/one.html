@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formvalidation</title> 
+     <script src="main2.js"></script>
+    </head>
+    <body>
+        <center>
+         <h1>STUDENT REGISTRATION FORM</h1>
+            <form  name="myForm" method="get" action="success.html" onsubmit = "return validate()">
+                <table cellspacing = "1" >
+                   
+                   <tr>
+                      <td>Name</td>
+                      <td><input type = "text" name = "Name1" /></td>
+                   </tr>
+                
+                   <tr>
+                      <td>EMail</td>
+                      <td><input type = "text" name = "EMail1" /></td>
+                   </tr>
+
+                   <tr>
+                    <td>password</td>
+                    <td><input type = "password" name = "password1" /></td>
+                   </tr>
+
+                   <tr>
+                     <td>confirm password</td>
+                     <td><input type = "password" name = "password2" /></td>
+                    </tr>
+                   
+                   <tr>
+                      <td>Courses</td>
+                      <td>
+                         <select name = "Courses1">
+                            <option value = "-1" selected>choose it your</option>
+                            <option value = "1">html</option>
+                            <option value = "2">mysql</option>
+                            <option value = "3">react js</option>
+                            <option value = "3">php deverops</option>
+                         </select>
+                      </td>
+                   </tr>
+
+                   <tr>
+                     <td>gender</td>
+                     <td name="gender1">
+                            <input type="radio" name="gender" value="male"> Male<br>
+                            <input type="radio" name="gender" value="female"> Female<br>
+                            <input type="radio" name="gender" value="other"> Other
+                     </td>
+                   </tr>
+
+                   <tr>
+                     <td>date of birth</td>
+                     <td><input type = "date" name = "birthday1" /></td>
+                    </tr>
+
+                    <tr>
+                     <td>Number:</td>
+                     <td><input type="text" name="number1"><span id="numloc"></span></td>
+                    </tr>
+
+                    <tr>
+                     <td>address</td>
+                     <td><textarea name="address" rows="5" cols="10"></textarea> </td>
+                    </tr>
+                   
+                  <tr>
+                    <td colspan="2"><input type="submit" value="register"/>  </td>
+                   </tr>
+                   
+                </table>
+             </form>      
+        </center>
+      
+    </body>
+</html>

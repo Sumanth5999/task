@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration form</title>
+    <script type="text/javascript">
+
+        function ReadValues(){
+            var valueA= (document.getElementById('txtvalueA').value);
+            var valueB= (document.getElementById('txtvalueB').value);
+            var Result= Addition(valueA,valueB);
+            alert(Result);  
+        }
+        function Addition(x,y){
+            return x+y;
+        }
+
+        function clear(){
+            document.getElementById("txtvalueA").value="";
+            document.getElementById("txtvalueB").value="";
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>registration form</h1>
+    <br><br>
+    <table border="1">
+        <tr>
+            <td>valueA</td>
+            <td><input type="text" id="txtvalueA" name="txtvalueA"  /> </td>
+        </tr>
+        <tr>
+            <td>valueB</td>
+            <td><input type="text" id="txtvalueB" name="txtvalueB" /> </td>
+        </tr>
+    </table>
+    <br>
+    <input type="submit" value="Add" onclick="return Readvalues()" />
+    <input type="reset" value="clear" onclick="return clear()" />
+    
+</body>
+</html>

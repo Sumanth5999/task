@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function validate(){
+            var name =document.myform.name1.value;
+            var password=document.myform.password1.value;
+        if(name=="null" || name==""){
+            alert("name cant be blank");
+            return false;
+        }else if(password.length<6){
+            alert("pasword must br 6 chars long");
+            return false;
+        }
+        }   
+    </script>
+    <center>
+    <form name="myform" method="post"  action="success.html" onsubmit="return validate()">
+name:<input type="text" name="name1">
+<br>
+password:<input type="password" name="password1">
+<br>
+<input type="submit" value="register">   
+    </form>
+    </center>
+</body>
+</html>

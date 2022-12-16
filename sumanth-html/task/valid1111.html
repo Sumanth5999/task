@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formvalidation</title>
+</head>
+<body>
+    <center>
+        <form name="myform" method="post" onsubmit="return validate()" action="why.html">
+    <br>
+name:<input type="text" name="name1" pattern="[a-zA-Z ]{3,}" > 
+    <br>
+   email:<input type="email" name="email1" > 
+    <br>
+password:<input type="password" name="password1">
+    <br>
+confirm password:<input type="password" name="password2">
+    <br>    
+number:<input type="number" number="number1">  
+    <br>
+gender:<input type="radio" name="gender">male
+    <input type="radio" name="gender">female
+    <input type="radio" name="gender">other
+    <br>
+courses:<select name="courses1" >
+    <option value="-1" selected >[CHOOSE YOURS]</option>
+        <option value="1">btech</option>
+        <option value="2">mtech</option>
+        <option value="3">mca</option>
+        <option value="4">msc</option>
+        <option value="5">others</option>
+    </select>
+    <br>
+dob:<input type="date" name="birthday">
+    <br>
+Address:<textarea name="address" rows="5" cols="15"> </textarea>
+    <br>
+    <br>
+    <input type="submit" value="click">
+</center>
+
+    <script type="text/javascript" >
+        function validate() {
+     var x=document.myForm.name1.value;
+     var y=document.myform.password1.value;
+     var z=document.myform.number1.value;
+     var m=document.myform.email1.value;
+     var atposition=m.indexof("@");
+     var dotposition=m.lastindexof(".");
+     if(x.length<6){
+        alert("name shoud be minimum 6 chars");
+        return false;
+     }
+     else if(y.length<8){
+        alert("paswd should be minimum 8 chars");
+        return false;
+     }
+     else if(isNaN(z)){
+        alert("enter 10 digits only");
+        return false;
+     }
+     else if(atposition<1 || dotposition<atposition+2 || dotposition+2>=m.length){
+        alert("please enter a valid e-mail address");
+        return false;
+     }
+    else 
+    return true;
+      
+}
+    </script>
+</form>
+
+<br><br>
+
+</body>
+</html>
